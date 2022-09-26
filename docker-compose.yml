@@ -1,0 +1,46 @@
+version: "3.7"
+
+services:
+  app_front:
+    build:
+      context: .
+      dockerfile: conf/dockerfile/front.dockerfile
+    container_name: "symfony_bts"
+    hostname: localhost
+    entrypoint: ["tail", "-f", "/dev/null"] #to keep it running
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - "db_symfony_bts:mysql-symfony"
+    volumes:
+      - ./app/:/home/symfo
+    depends_on:
+      - db_symfony_bts
+    environment:
+      - SYMFONY_DB_HOST=db_symfony_bts
+  db_symfony_bts:
+    image: mysql:8
+    container_name: db_symfony_bts
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql-symfony:/var/lib/mysql-symfony
+      - ./conf/mysql/data/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: symfo
+
+  db-pma-symfo_bts:
+    image: "phpmyadmin/phpmyadmin"
+    container_name: "db-pma-symfo_bts"
+    links:
+      - "db_symfony_bts:mysql-symfony"
+    ports:
+      - "10001:80"
+    depends_on:
+      - db_symfony_bts
+    environment:
+      - PMA_HOSTS=db_symfony_bts
+
+volumes:
+  mysql-symfony:
