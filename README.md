@@ -2,13 +2,13 @@ Ouvrir une ligne de comande dans windows
 
 Se placer à la racine du dossier contenant ce fichier
 
-docker compose build
+# docker compose build
 
-docker compose up -d
+	docker compose up -d
 
 Dans l'application docker une stack est apparue
 
-Ouvrir la ligne de commande du container symfony_bts
+# Ouvrir la ligne de commande du container symfony_bts
 	
 	git config --global user.email "mail"
 	git config --global user.name "nom"
@@ -24,30 +24,30 @@ Ouvrir la ligne de commande du container symfony_bts
 
 	symfony server:stop
 
-Avoir une base
+# Avoir une base
 	
-    Créer un controler 
+   Créer un controler 
 
 	symfony console make:controller
 
-    Créer une Entité 
+   Créer une Entité 
 
 	symfony console make:entity
 
-    Faire une migration 
+   Faire une migration 
 
 	symfony console make:migration
 	symfony console doctrine:migrations:migrate
 
 
-Easy admin 
+# Easy admin 
 	
-    Installer 
+   Installer 
 
 	composer require easycorp/easyadmin-bundle
 
 
-    Avoir un dashboard
+   Avoir un dashboard
 
 	symfony console make:admin:dashboard
 
@@ -56,7 +56,7 @@ Easy admin
 	symfony console make:admin:crud
 
 
-Permission 
+# Permission 
 
 	symfony console make:user User
 
