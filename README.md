@@ -71,3 +71,6 @@ Dans l'application docker une stack est apparue
 
 	   -> LoginAuthenticator
 
+# Vider le Cache
+
+	Symfony console cache:clear
