@@ -34,6 +34,10 @@ Dans l'application docker une stack est apparue
 
 	symfony console make:entity
 
+   Créer un Form
+   
+   	symfony console make:form
+
    Faire une migration 
 
 	symfony console make:migration
