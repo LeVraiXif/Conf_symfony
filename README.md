@@ -6,7 +6,9 @@
 
 Dans l'application docker une stack est apparue
 
-## Ouvrir la ligne de commande du container symfony_bts
+## Dans le Docker
+
+Ouvrir la ligne de commande du container symfony_bts
 
 	cd /home/symfo
 		symfony new ./ --version=6.0 --php=8.1 --webapp
