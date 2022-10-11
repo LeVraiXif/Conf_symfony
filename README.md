@@ -4,8 +4,6 @@
 
 	docker compose up -d
 
-Dans l'application docker une stack est apparue
-
 ## Dans le Docker
 
 Ouvrir la ligne de commande du container symfony_bts
