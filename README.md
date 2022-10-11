@@ -80,7 +80,8 @@ Dans l'application docker une stack est apparue
 
 	symfony console security:hash-password
 
-   Créer un login
+  Créer un login
+  
 	symfony console make:auth
 
 	   -> LoginAuthenticator
