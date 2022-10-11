@@ -68,7 +68,7 @@ Dans l'application docker une stack est apparue
 
    Pour tester le hash 
 
-	security:hash-password
+	symfony console security:hash-password
 
    Créer un login
 	symfony console make:auth
