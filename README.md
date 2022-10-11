@@ -59,6 +59,13 @@ Dans l'application docker une stack est apparue
 
 	symfony console make:admin:crud
 
+# Faire une page d'inscription 
+
+	symfony console make:registration-form
+	
+	nano bin/config/packages/security.yml
+		access_control: {path: ^/admin, roles: ROLE_ADMIN}
+		
 
 # Permission 
 
@@ -75,9 +82,6 @@ Dans l'application docker une stack est apparue
 
 	   -> LoginAuthenticator
 	   
-# Faire une page d'inscription 
-
-	symfony console make:registration-form
 
 # Vider le Cache
 
