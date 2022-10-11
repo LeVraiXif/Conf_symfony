@@ -64,7 +64,8 @@ Dans l'application docker une stack est apparue
 	symfony console make:registration-form
 	
 	nano bin/config/packages/security.yml
-		access_control: {path: ^/admin, roles: ROLE_ADMIN}
+		access_control: 
+			{path: ^/admin, roles: ROLE_ADMIN} // le /admin uniquement accessible par le ROLE_ADMIN
 		
 
 # Permission 
