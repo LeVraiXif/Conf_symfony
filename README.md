@@ -9,9 +9,6 @@ Se placer à la racine du dossier contenant ce fichier
 Dans l'application docker une stack est apparue
 
 # Ouvrir la ligne de commande du container symfony_bts
-	
-	git config --global user.email "mail"
-	git config --global user.name "nom"
 
 	cd /home/symfo
 		symfony new ./ --version=6.0 --php=8.1 --webapp
@@ -26,6 +23,11 @@ Dans l'application docker une stack est apparue
 
 	symfony server:stop
 
+# Configurer Git 
+
+	git config --global user.email "mail"
+	git config --global user.name "nom"
+	
 # Avoir une base
 	
    Créer un controler 
