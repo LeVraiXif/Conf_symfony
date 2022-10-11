@@ -78,3 +78,6 @@ Dans l'application docker une stack est apparue
 # Vider le Cache
 
 	Symfony console cache:clear
+
+# Autre
+	Symfony console debug:router
