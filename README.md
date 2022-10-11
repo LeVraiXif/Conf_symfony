@@ -2,6 +2,8 @@
 
 ## docker compose build
 
+Ouvrir un terminal dans l'emplacement du fichier
+
 	docker compose up -d
 
 ## Dans le Docker
