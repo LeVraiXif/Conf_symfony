@@ -1,7 +1,3 @@
-Ouvrir une ligne de comande dans windows
-
-Se placer à la racine du dossier contenant ce fichier
-
 # docker compose build
 
 	docker compose up -d
