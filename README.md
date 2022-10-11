@@ -74,6 +74,10 @@ Dans l'application docker une stack est apparue
 	symfony console make:auth
 
 	   -> LoginAuthenticator
+	   
+# Faire une page d'inscription 
+
+	symfony console make:registration-form
 
 # Vider le Cache
 
