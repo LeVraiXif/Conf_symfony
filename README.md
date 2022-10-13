@@ -109,7 +109,7 @@ De base
         ]);
     }
 
-Si un contrôlé doit envoyer des paramètres
+Si un controler doit envoyer des paramètres
 
 	#[Route('/index', name: 'app_index')]
     public function index(Test $test): Response
