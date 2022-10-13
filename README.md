@@ -93,5 +93,28 @@ Ouvrir la ligne de commande du container symfony_bts
 
 	Symfony console cache:clear
 
-## Autre
+## Route
+
 	Symfony console debug:router
+
+### Changer les routes dans les controllers
+
+De base
+
+	#[Route('/index', name: 'app_index')]
+    public function index(): Response
+    {
+        return $this->render('index/index.html.twig', [
+            'controller_name' => 'IndexController',
+        ]);
+    }
+
+Si un contrôlé doit envoyer des paramètres
+
+	#[Route('/index', name: 'app_index')]
+    public function index(Environment $twig, Test $test): Response
+    {
+        return $this->render('index/index.html.twig', [
+            'test' => $test
+        ]);
+    }
