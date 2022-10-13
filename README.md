@@ -112,7 +112,7 @@ De base
 Si un contrôlé doit envoyer des paramètres
 
 	#[Route('/index', name: 'app_index')]
-    public function index(Environment $twig, Test $test): Response
+    public function index(Test $test): Response
     {
         return $this->render('index/index.html.twig', [
             'test' => $test
