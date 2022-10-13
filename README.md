@@ -118,3 +118,5 @@ Si un controler doit envoyer des paramètres
             'test' => $test,
         ]);
     }
+
+/!\ Ne pas oublier les `use` en haut de page /!\
