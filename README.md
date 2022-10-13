@@ -115,6 +115,6 @@ Si un contrôlé doit envoyer des paramètres
     public function index(Test $test): Response
     {
         return $this->render('index/index.html.twig', [
-            'test' => $test
+            'test' => $test,
         ]);
     }
