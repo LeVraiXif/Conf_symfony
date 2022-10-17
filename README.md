@@ -16,6 +16,10 @@ Ouvrir la ligne de commande du container symfony_bts
 	nano /home/symfo/.env
 		Commenter la ligne non commentée commençant par DATABASE_URL (attention au multiligne)
 		DATABASE_URL="mysql://root:password@mysql-symfony:3306/symfony?serverVersion=8&charset=utf8mb4"
+		
+En cas de changement de machine 
+
+	symfony composer update
 
 ## Lancer et couper le serveur 
 
